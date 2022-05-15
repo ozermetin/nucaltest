@@ -11,6 +11,7 @@ module.exports = {
         ws: true,
       },
     },
+    outputDir: '../platform/static/'
   },
   chainWebpack: config => {
     config.resolve.alias.set(

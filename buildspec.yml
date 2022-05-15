@@ -14,3 +14,7 @@ phases:
     commands:
       - echo Build Phase
       - npm run build:static
+  postt_build:
+    commands:
+      - echo PostBuild Phase
+      - aws s3 sync ../public/static $S3_BUCKET

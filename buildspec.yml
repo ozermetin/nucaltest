@@ -14,6 +14,10 @@ phases:
     commands:
       - echo Build Phase
       - npm run build:static
+  post_build:
+    commands:
+      - echo PostBuild Phase
+      - aws s3 sync dist s3://nucal-mycwatch 
 artifacts:
   files:
     - 'dist/**/*'

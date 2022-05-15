@@ -13,4 +13,4 @@ phases:
   build:
     commands:
       - echo Build Phase
-      - npm run build
+      - npm run build:static
